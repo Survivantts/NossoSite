@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survivants - Empresa Criativa</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: black;
+            text-align: center;
+            color: white;
+        }
+        .container {
+            max-width: 900px;
+            margin: auto;
+            padding: 20px;
+        }
+        h1 {
+            font-size: 3em;
+            text-shadow: 2px 2px 4px #000;
+        }
+        .highlight {
+            font-size: 1.5em;
+            color: red;
+        }
+        .team, .projects, .values, .mission, .technologies, .contact {
+            margin-top: 30px;
+            padding: 20px;
+            background: rgba(255, 255, 255, 0.2);
+            border-radius: 10px;
+        }
+        .tree {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 30px;
+        }
+        .boss {
+            font-size: 2em;
+            color: red;
+            font-weight: bold;
+        }
+        .branch {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+        }
+        .node {
+            padding: 10px;
+            margin: 10px;
+            background: red;
+            border-radius: 10px;
+            color: black;
+            font-weight: bold;
+        }
+        .contact input, .contact textarea, .contact button {
+            display: block;
+            width: 80%;
+            margin: 10px auto;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+        }
+        .contact button {
+            background: red;
+            color: black;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        .profile-pic {
+      width: 255px;
+      height: 255px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 3px solid rgb(124, 127, 128);
+     }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Bem-vindo à Survivants</h1>
+        <img src="./img/icomEmpresa.png" class="profile-pic">
+        <p class="highlight">Criatividade, Acessibilidade, Trabalho em Equipe e Aprendizado</p>
+        
+        <div class="tree">
+            <p class="boss">Chefe: Roger Sarmento</p>
+            <div class="branch">
+                <div class="node">Designers: Renara</div>
+                <div class="node">Designers: Yasmin</div>
+            </div>
+            <div class="branch">
+                <div class="node">Desenvolvedoras: Amanda</div>
+                <div class="node">Desenvolvedoras: Thalita (Yuri)</div>
+            </div>
+        </div>
+        
+        <div class="values">
+            <h2>Valores</h2>
+            <p>Criatividade</p>
+            <p>Acessibilidade</p>
+            <p>Trabalho em equipe</p>
+            <p>Aprendizado</p>
+        </div>
+        
+        <div class="mission">
+            <h2>Missão</h2>
+            <p>Proporcionar segurança através de um sistema de login e oferecer diversão tanto no aplicativo quanto no jogo.</p>
+        </div>
+        
+        <div class="technologies">
+            <h2>Tecnologias Utilizadas</h2>
+            <p>Java (NetBeans)</p>
+            <p>Swing (Interface Gráfica)</p>
+            <p>UML (Diagrama)</p>
+        </div>
+
+        <div class="projects">
+            <h2>Nossos Projetos</h2>
+            <p><strong>Aplicativo:</strong> Colorime (Paleta de cores) - Java (NetBeans)</p>
+            <p></p><strong>Jogo:</strong> Voler Vite (Inspirado no Flappy Bird) - Java (NetBeans)</p>
+        </div>
+
+        <div class="contact">
+            <h2>Faça um Pedido</h2>
+            <form>
+                <input type="text" placeholder="Seu Nome" required>
+                <input type="email" placeholder="Seu E-mail" required>
+                <textarea placeholder="Descreva seu pedido" rows="5" required></textarea>
+                <button type="submit">Enviar Pedido</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
